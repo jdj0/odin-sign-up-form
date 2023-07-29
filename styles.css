@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.img-wrapper img {
+    width: 30vw;
+    height: 100vh;
+}
+
+.right-wrapper {
+    width: 70vw;
+    height: 100vh;
+    background-color: #202124;
+    padding: 50px;
+}
+
+.call-to-action{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    color: #ea80fc;
+    font-size: 50px;
+}
+
+.call-to-action-sub{
+    font-family: 'Lato', sans-serif;
+    color:#b64fc8;
+    font-size: 18px;
+}
+
+.form-wrapper {
+    background-color: #606368;
+}
