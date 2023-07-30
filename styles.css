@@ -9,7 +9,7 @@ body {
     display: flex;
 }
 
-.img-wrapper img {
+.left-wrapper img {
     width: 30vw;
     height: 100vh;
 }
@@ -19,6 +19,9 @@ body {
     height: 100vh;
     background-color: #202124;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .call-to-action{
@@ -26,14 +29,36 @@ body {
     letter-spacing: 5px;
     color: #ea80fc;
     font-size: 50px;
+    margin: 1px;
 }
 
 .call-to-action-sub{
     font-family: 'Lato', sans-serif;
     color:#b64fc8;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .form-wrapper {
     background-color: #606368;
+    height: 33vw;
+    padding: 5%;
 }
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    width: 25vw;
+    height: 30px;
+    border-radius: 7px;
+  }
