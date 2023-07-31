@@ -18,7 +18,6 @@ body {
     width: 70vw;
     height: 100vh;
     background-color: #202124;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,20 +25,23 @@ body {
 
 .call-to-action{
     font-family: 'Playfair Display', serif;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color: #ea80fc;
     font-size: 50px;
     margin: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .call-to-action-sub{
     font-family: 'Lato', sans-serif;
     color:#b64fc8;
     font-size: 24px;
+    margin-bottom: 25px;
 }
 
 .form-wrapper {
-    background-color: #606368;
+    background-color: #424448;
     height: 33vw;
     padding: 5%;
 }
@@ -51,14 +53,65 @@ body {
     gap: 20px;
 }
 
+.form-end {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid black;
+    box-shadow: inset;
+    background-color: #ea80fc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    box-shadow: 5px 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
+  label {
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+  }
+
   input {
     width: 25vw;
     height: 30px;
     border-radius: 7px;
+    border: none;
+    margin-top: 2px;
+    border: 3px solid black;
   }
+
+  input:invalid {
+    border: 1px dashed red;
+  }
+  
+  input:valid {
+    border: 1px solid green;
+  }
+
+  .valid{
+    border: 4px solid green;
+  }
+
+
+/*input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+  input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid green;
+}

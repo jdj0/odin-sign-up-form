@@ -19,21 +19,21 @@
         </div>
         <div class="right-wrapper">
             <h1 class="call-to-action">Sign up below for offers galore</h1>
-            <p class="call-to-action-sub">Honestly, we're going to be sending you some real sweet offers — straight to
-                your inbox! It's going to be none stop promotion, all the time. You're going to love it.</p>
+            <p class="call-to-action-sub call-to-action">Honestly, we're going to be sending you some real sweet offers — straight to
+                your inbox! It's going to be non stop promotion, all the time. You're going to love it.</p>
             <div class="form-wrapper">
-                <form>
+                <form action="" method="post">
                     <ul>
                         <legend>Give us your Data:</legend>
                         <br>
                         <div class="form">
                             <li>
                                 <label for="f-name">FIRST NAME: </label><br>
-                                <input type="text" name="f-name" id="f-name">
+                                <input type="text" name="f-name" id="f-name" minlength="3">
                             </li>
                             <li>
                                 <label for="l-name">LAST NAME: </label><br>
-                                <input type="text" name="l-name" id="l-name"><br>
+                                <input type="text" name="l-name" id="l-name" minlength="3"><br>
                             </li>
                             <li>
                                 <label for="email">EMAIL: </label><br>
@@ -45,22 +45,37 @@
                             </li>
                             <li>
                                 <label for="pass1">PASSWORD: </label><br>
-                                <input type="password" name="pass1" id="pass1">
+                                <input type="password" name="pass1" id="pass1" minlength="6">
                             </li>
                             <li>
                                 <label for="pass2">PASSWORD CONFIRM: </label><br>
-                                <input type="password" name="pass2" id="pass2"><br>
+                                <input type="password" name="pass2" id="pass2" minlength="6"><br>
+                                <p id="passMatch"></p>
                             </li>
-                        
+                        </div>
                     </ul>
-                    <button type="submit">Give Data</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
-                </form>
-                
+                    <button class="form-end" type="submit">GIVE DATA</button>
+                    <p class="form-end"">Already have an account? <a href="#">Log in</a></p>
             </div>
+            </form>
         </div>
     </div>
 </body>
+
+<script>
+    const pass1 = document.getElementById('pass1')
+    const pass2 = document.getElementById('pass2')
+    let passMatch = document.getElementById('passMatch')
+
+    if (pass1.value === pass2.value){
+        pass1.classList.add('valid');
+        pass2.classList.add('valid');
+        passMatch.innerHTML = ''
+    } else {
+        pass1.classList.remove('valid');
+        pass2.classList.remove('valid');
+        passMatch.innerHTML = 'Passwords do not match';
+    }
+</script>
 
 </html>
