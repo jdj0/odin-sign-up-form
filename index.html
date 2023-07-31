@@ -19,7 +19,8 @@
         </div>
         <div class="right-wrapper">
             <h1 class="call-to-action">Sign up below for offers galore</h1>
-            <p class="call-to-action-sub call-to-action">Honestly, we're going to be sending you some real sweet offers — straight to
+            <p class="call-to-action-sub call-to-action">Honestly, we're going to be sending you some real sweet offers
+                — straight to
                 your inbox! It's going to be non stop promotion, all the time. You're going to love it.</p>
             <div class="form-wrapper">
                 <form action="" method="post">
@@ -54,8 +55,10 @@
                             </li>
                         </div>
                     </ul>
-                    <button class="form-end" type="submit">GIVE DATA</button>
-                    <p class="form-end"">Already have an account? <a href="#">Log in</a></p>
+                    <div class="form-footer">
+                        <button class="form-end" type="submit">GIVE DATA</button>
+                    </div>
+                    <p style="text-align: right;">Already have an account? <a href=" #">Log in</a></p>
             </div>
             </form>
         </div>
@@ -67,7 +70,7 @@
     const pass2 = document.getElementById('pass2')
     let passMatch = document.getElementById('passMatch')
 
-    if (pass1.value === pass2.value){
+    if (pass1.value === pass2.value) {
         pass1.classList.add('valid');
         pass2.classList.add('valid');
         passMatch.innerHTML = ''
